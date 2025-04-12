@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Submit Ticket | Support Center</title>
+</head>
+<body>
+    <div class="public-container">
+        <div class="ticket-form">
+            <div class="form-header">
+                <i class='bx bx-support'></i>
+                <h1>Submit Support Ticket</h1>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Brief summary of your issue" required>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea rows="5" placeholder="Detailed description of your issue..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Priority</label>
+                    <select>
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                        <option>Critical</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class='bx bx-paper-plane'></i>
+                    Submit Ticket
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

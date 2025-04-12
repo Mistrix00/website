@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Tickets | HW Development</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span>ADMIN</span>PANEL</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="dashboard.html"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="shop.html"><i class='bx bx-store-alt'></i>Shop</a></li>
+            <li><a href="index.html"><i class='bx bx-analyse'></i>Overview</a></li>
+            <li class="active"><a href="ticket.html"><i class='bx bx-message-square-dots'></i>Tickets</a></li>
+            <li><a href="users.html"><i class='bx bx-group'></i>Users</a></li> <!-- Update link to users.html -->
+            <li><a href="settings.html"><i class='bx bx-cog'></i>Settings</a></li> <!-- Update link to settings.html -->
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="logout.html" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="logo.png">
+            </a>
+        </nav>
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Tickets</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Dashboard</a></li>
+                        /
+                        <li><a href="#" class="active">Support Tickets</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Ticket List -->
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-message-square-dots'></i>
+                        <h3>Recent Tickets</h3>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ticket ID</th>
+                                <th>Subject</th>
+                                <th>Status</th>
+                                <th>Priority</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#0004</td>
+                                <td>Refund Issue</td>
+                                <td><span class="status pending">Open</span></td>
+                                <td>Low</td>
+                            </tr>
+
+                            <tr>
+                                <td>#0003</td>
+                                <td>Account Issue</td>
+                                <td><span class="status pending">Open</span></td>
+                                <td>High</td>
+                            </tr>
+
+                            <tr>
+                                <td>#0002</td>
+                                <td>Bug found</td>
+                                <td><span class="status process">In Progress</span></td>
+                                <td>Low</td>
+                            </tr>
+
+                            <tr>
+                                <td>#0001</td>
+                                <td>Login Issue</td>
+                                <td><span class="status completed">Completed</span></td>
+                                <td>High</td>
+                            </tr>
+                            <!-- Add more tickets as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
