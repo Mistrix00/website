@@ -516,6 +516,7 @@ body{
     background: var(--warning);
 }
 
+
 .content main .bottom-data .reminders{
     flex-grow: 1;
     flex-basis: 300px;
